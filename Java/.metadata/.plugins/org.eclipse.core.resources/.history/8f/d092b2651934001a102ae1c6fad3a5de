@@ -1,0 +1,54 @@
+package br.com.marcos.classes;
+
+import java.util.Date;
+
+public class Usuario {
+	
+	private String nome;
+	private String cpf;
+	private Date data_nasc;
+	private String email;
+	
+	public String getNome() {
+		return this.nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public String getCPF() {
+		return this.cpf;
+	}
+	
+	public void setCPF(String cpf) {
+		this.cpf = cpf;
+	}
+
+	
+	public Date getDataNasc(Date data) {
+		return this.data_nasc;
+	}
+	
+	public void setDataNasc(Date dt) {
+		this.data_nasc = dt;
+	}
+	
+	public void converteDataFormatted(String data) {
+		
+		data = (Date) data;
+		
+		this.setDataNasc(data);
+	}
+	
+	public String getEmail() {
+		return this.email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
+}
+

@@ -1,0 +1,18 @@
+package br.com.marcos.classes;
+
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+public abstract class Sec {
+	
+private MessageDigest algorithm;
+
+private  byte[] setHash(String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+	this.algorithm = MessageDigest.getInstance("SHA-256");
+	byte[] messageDigest = algorithm.digest(senha.getBytes("UTF-8"));
+	return messageDigest;
+}
+
+	
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+</head>
+
+<body>
+	<h1>Cadastro de Usuários</h1>
+	<div>
+		<div>
+			<label>Nome:</label>
+			<input type="text" placeholder="Nome"></input>
+		</div>
+		<div>
+			<label>CPF:</label>
+			<input type="text" placeholder="CPF"></input>
+		</div>
+		<div>
+			<label>Data de Nascimento:</label>
+			<input type="text" placeholder="Data de nascimento"></input>
+		</div>
+		<div>
+			<label>Placa</label>
+			<input type="text" placeholder="Raça"></input>
+		</div>
+	</div>
+</body>
+
+</html>

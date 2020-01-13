@@ -1,0 +1,11 @@
+package br.com.marcos.classes;
+
+import java.security.MessageDigest;
+
+public class Sec {
+	
+	private MessageDigest algorithm;
+
+	
+	
+}
