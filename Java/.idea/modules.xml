@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.metadata/.metadata.iml" filepath="$PROJECT_DIR$/.metadata/.metadata.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FirstSite/FirstSite.iml" filepath="$PROJECT_DIR$/FirstSite/FirstSite.iml" />
-    </modules>
-  </component>
-</project>
