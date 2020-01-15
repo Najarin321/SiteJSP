@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h2 class="text text-info mt-4">
+            Insira os dados do Médico
+        </h2>
+        <div class="row">
+        <form action="" method="get" class="form-group">
+            <label for="">Nome:</label><input class="form-control " type="text" name="" placeholder="Insira o nome do médico" id="">
+            <label for="">CRM:</label><input class="form-control" type="text" name="" placeholder="Insira o CRM do médico" id="">
+        </div>
+            <div class="row">
+            <label for="">Especialidade:</label><input class="form-control" type="text" name="" placeholder="Insira a especialidade" id="">
+            <label for="">Email:</label><input class="form-control " type="text" name="" placeholder="Insira o email" id="">
+        </div>
+        <button class="btn btn-info mt-3" type="submit">
+            Salvar
+        </button>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            medicos: []
+        },
+        methods: {
+            buscarMedicos: function () {
+                fetch('https://jsonplaceholder.typicode.com/todos/2')
+                .then(response => response.json())
+                .then(json => console.log(json))
+            },
+        }
+
+    })
+
+
+
+</script>
